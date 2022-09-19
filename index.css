@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --background: #d1deec;
+    --foreground: #f1f3f5;
+    --white: #fff;
+    --black: #000;
+    --gray: #6e6e6e;
+    --shadow: #76767663;
+    --border: #cfcfcf;
+}
+.dark-color{
+    --background: #222230;
+    --foreground: #42435c;
+    --white: #2b2c44;
+    --black: #eeecff;
+    --gray: #d5dfd5;
+    --shadow: #00000063;
+    --border: #3f4172;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--background);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+ 
+}
+
+.container{
+    width: 95%;
+    height: 100px;
+    border-radius: 20px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container-logo{
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo img{
+    width: 70px;
+
+}
+
+.container-busqueda{
+    width: 34%;
+    position: relative;
+}
+
+.container-busqueda input{
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px 45px 15px 15px;
+    background: var(--foreground);
+    border: none;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    color: var(--black);
+}
+
+.container-busqueda i{
+    position: absolute;
+    top: 19px;
+    right: 20px;
+}
+
+.icons-1{
+    width: 25%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.icons-1 i,.icons-2 i{
+  font-size: 23px;
+  color: #769bcb;
+}
+
+.icons-1 i:hover,.icons-2 i:hover{
+    background: #1877f2;
+    color: #d1deec;
+    cursor: pointer;
+}
+
+
+
+
+.icons-2{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 25px;
+}
+
+.icons-2 .fa-caret-down{
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+}
+
+
+.icons-2 > label{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: #3f4e72;
+    overflow: hidden;
+    
+}
+
+.icons-2 label img{
+    width: 100%;
+}
+
+
+
+
+
+
+/*=========Home==========*/
+
+.home{
+    display: flex;
+    justify-content: center;
+}
+
+
+.home-container{
+    width: 95%;
+ 
+}
+
+
+.home-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home-left{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 15px;
+    background: var(--foreground);
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+
+.home-left .profile{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.home-left .profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+
+
+/*=====pages====*/
+
+.pages,.groups,.games,.explore{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.pages label, .groups label,.games label,.explore a{
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pages h3,.groups h3,.games h3,.explore h3{
+    margin-bottom: 10px;
+}
+
+.pages label img, .groups img,.games img {
+    width: 40px;
+    height: 40px;
+    background: white;
+    padding: 5px;
+}
+
+.pages label span, .groups span,.games span{
+    color: var(--gray);
+    font-size: 14px;
+}
+.explore span{
+    color: #4575b3;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+.explore i{
+    font-size: 20px;
+    color: #4575b3;
+    background: white;
+    padding: 5px;
+}
+
+
+.pages button, .groups button,.games button,.explore button {
+    width: 95%;
+    height: 45px;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px 0 var(--shadow);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4575b3;
+    cursor: pointer;
+} 
+
+
+
+/*=====home-center====*/
+
+
+.home-center{
+    width: 49%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    
+  
+}
+
+
+.historias,.create-post, .publicacion{
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    background: var(--foreground);
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+.historias h3,.create-post h3,.container-events label h3,.friends h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #1877f2;
+    
+}
+
+
+.contenedor-historias{
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contenedor-historias .historia{
+    width: 18%;
+    height: 85%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.historia .historia-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.historia .historia-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.historia .historia-wrapper label{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 20px;
+    font-size: 16px;
+}
+
+
+.historia .historia-wrapper img:nth-child(1){
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+    position: absolute;
+    border: 5px solid #1877f2;
+    top: 0;
+
+}
+
+
+
+/*===create-post===*/
+
+
+.create-post h3{
+    margin-bottom: 20px;
+}
+
+.create-post label{
+    width: 100%;
+    background: var(--foreground);
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.create-post label input{
+    width: 90%;
+    height: 10vh;
+    border: none;
+    background: var(--foreground);
+    outline: none;
+}
+
+.create-post input::placeholder{
+    font-size: 16px;
+}
+
+.create-post img{
+    overflow: hidden;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.post-options{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.post-options label{
+    width: fit-content;
+    padding: 2px;
+    display: flex;
+    gap: 0;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.post-options label i{
+    padding: 10px;;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 2px;
+    color: white;
+}
+
+/*====Publicacion=====*/
+
+.publicacion {
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+.publicacion > label{
+    display: flex;
+ 
+    padding: 5px;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+.publicacion >  label> h3{
+    font-weight: 500;
+    width: fit-content;
+    padding: 5px 15px;
+    cursor: pointer;
+ 
+    color: #6e6e6e;
+}
+
+.publicacion  .active{
+    color: #000;
+    border-bottom: 5px solid #1877f2;
+}
+
+
+
+.publicaciones{
+    width: 100%;
+   
+}
+
+.publicacion-info{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-left: 15px;
+   
+}
+
+.publicacion-info img{
+    width: 8%;
+    height:60%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.publicacion-info  h3{
+    font-size: 20px;
+}
+
+.publicacion-info  span,.publicacion-info label >h2> span{
+    font-size: 16px;
+    color: #6e6e6e;
+    font-weight: 300;
+}
+
+
+.publicaciones p{
+    font-size: 18px;
+    padding: 0px 85px 0px 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.container-fotos{
+    width:95%;
+    height: 45vh;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 29% 29% 39%;
+    grid-template-rows: 59% 39%;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cont-1{
+    grid-column:1/3 ;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont-2{
+    grid-column:1/2 ;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont-3{
+    grid-column:2/3 ;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont-4{
+    grid-column:3/4 ;
+    grid-row: 1/4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont-1 img,.cont-2 img,.cont-3 img,.cont-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.publicacion-like{
+    width: 90%;
+    display: flex;
+    gap: 30px;
+    
+  
+}
+
+.publicacion-like label{
+    display: flex;
+    gap: 0;
+}
+
+.publicacion-like label i{
+    padding: 5px;
+    border-radius: 50px;
+    color: rgb(160, 160, 160);    
+}
+
+
+.publicacion-like span{
+    margin-left: 5px;
+    color: #6e6e6e;
+}
+
+
+
+/*=======Home Right=====*/
+
+
+.home-right{
+    width: 25%;
+    border-radius: 20px;
+    
+}
+
+.container-events{
+    width: 100%;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background: var(--foreground);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+.container-events> label,.friends label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.container-events label p,.friends label > p{
+    color: #626262;
+    font-size: 15px;
+}
+
+.container-events img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.public-events{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    gap: 8px;
+}
+
+.public-events > div{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+.public-events > label, .public-friends >label{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.public-events > label h2,.public-friends > label h2{
+    font-size: 18px;
+}
+
+.container-events button{
+    width: 100%;
+    height: 4vh;
+    font-size: 16px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+
+.public-friends > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+.public-friends {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px ;
+
+}
+
+.friends{
+    background: var(--foreground);
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+.public-friends > label p{
+    font-size: 14px;
+    
+}
+
+.friends-button{
+    width: 60%;
+    margin-left: 60px;
+    gap: 20px;
+
+}
+
+.friends-button > button{
+    width:90px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+   
+}
+
+
+
+
+.create-pages{
+    width: 100%;
+    background: var(--foreground);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+
+.pages-title,.create-pages >label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pages-title > i{
+    margin-right: 18px;
+    font-size: 18px;
+}
+
+.pages-title > div{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pages-title > div h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pages-title > div i{
+    padding: 10px;
+    background: #1877f2;
+    color: var(--white);
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.create-pages > img{
+    width: 90%;
+    height: 30vh;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+
+
+.create-pages >label h3,.create-pages >label span{
+    font-size: 14px;
+}
+
+
+.create-pages >label >button{
+    background: #1877f2;
+    width: 100px;
+    border: none;
+    color: var(--foreground);
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.mensaje{
+    width: 100%;
+    background: var(--foreground);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.cuadro{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+
+.cuadro > i{
+    padding: 10px;
+    background: var(--foreground);
+    color: #1877f2;
+    border-radius: 20px;
+}
+
+.cuadro > label{
+    width: 70%;
+    display: flex;
+    gap: 10px;
+
+}
+
+.cuadro > label > img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cuadro > label > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cuadro > label > div span{
+    font-size: 13px;
+    color: #626262;
+}
+
